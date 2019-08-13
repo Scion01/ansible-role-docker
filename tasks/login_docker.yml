@@ -1,0 +1,4 @@
+- name: Log into DockerHub
+  docker_login:
+   username: "scion01"
+   password: "Nn1015191867"

@@ -1,0 +1,29 @@
+var1: "value1"
+var2: "value2"
+var3: "value3"
+download_url: "https://files-cdn.liferay.com/mirrors/download.oracle.com/otn-pub/java/jdk/7u80-b15/jdk-7u80-linux-x64.tar.gz"
+version: "1.7"
+tar_src: "/data/Java/1.7/jdk-7u80-linux-x64.tar.gz"
+tar_dest: "/data/Java/1.7"
+bashrc_home: "/home/user/.bashrc"
+java7_dir: "/data/Java/1.7/jdk1.7.0_80"
+jdk8_path: "export JAVA_HOME8=/data/java/jdk1.8.0_131
+export PATH=$JAVA_HOME8/bin:$PATH"
+packages_list: ["jq","curl"]
+graph: "/data/var/lib/docker"
+storage_driver: "overlay2"
+storage_opt: [  "overlay2.override_kernel_check=true" ]
+bip: "172.17.0.1/24"
+debug: "false"
+
+
+daemon_config_directory: "/etc/docker/daemon.json"
+
+
+
+create_containers: 4
+default_container_name: docker
+default_container_image: hello-world
+default_container_command: sleep 1d
+
+

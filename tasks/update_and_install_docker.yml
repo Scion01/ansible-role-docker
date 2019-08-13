@@ -1,0 +1,6 @@
+- name: Update apt and install docker-ce
+  apt:
+   name: docker-ce
+   update_cache: yes
+   state: latest
+  notify: restart docker
